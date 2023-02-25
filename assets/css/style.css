@@ -1,20 +1,3 @@
-/*-----------------------------------*\
- * #style.css
-\*-----------------------------------*/
-
-
-/**
- * copyright 2022 @codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
- * #CUSTOM PROPERTY
-\*-----------------------------------*/
-
 :root {
 
   /**
@@ -76,7 +59,9 @@ li { list-style: none; }
 a { text-decoration: none; }
 
 img, span, button, a, ion-icon { display: block; }
-
+ion-icon {
+  pointer-events: none;
+ }
 button {
   background: none;
   border: none;
@@ -364,68 +349,13 @@ main { background: var(--xiketic-1); }
 }
 
 
-
-
-
 /*-----------------------------------*\
- * #BLOG
+ * #PRIVACY POLICY
 \*-----------------------------------*/
-
-.blog { padding: 80px 0; }
-
-.blog-title {
-  text-align: center;
-  margin-bottom: 60px;
+.policy ul li{
+  list-style: circle;
+  margin-left: 20px;
 }
-
-.blog-list {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 60px;
-}
-
-.blog-banner {
-  position: relative;
-  height: 250px;
-  margin-bottom: 40px;
-}
-
-.blog-banner img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.blog-banner time {
-  position: absolute;
-  bottom: -15px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: var(--amaranth);
-  color: var(--white);
-  font-size: var(--fs-6);
-  font-weight: var(--fw-600);
-  text-align: center;
-  min-width: 130px;
-  padding: 8px 0;
-  border-radius: 20px;
-}
-
-.blog-post-title {
-  color: var(--white);
-  margin-bottom: 10px;
-}
-
-.blog-post:hover .blog-post-title { text-decoration: underline; }
-
-.blog-post-text {
-  color: var(--silver-sand);
-  font-size: var(--fs-6);
-  padding-right: 50px;
-}
-
-
 
 
 
